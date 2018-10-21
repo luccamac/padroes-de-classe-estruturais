@@ -7,9 +7,7 @@ public class SomadorCorreto implements SomadorEsperado {
 	@Override
 	public int somaVetor(int[] vetor) {
 		int soma = 0;
-		for (int i=0; i<vetor.length; i++) {
-			soma =+ soma;
-		}
+		for (int i: vetor) soma =+ i;
 		return soma;		
 	}
 
